@@ -1,0 +1,154 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Google Sans', sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    transition: all 0.32s;
+}
+
+.title {
+    margin: 0 0 24px;
+    color: #000000;
+    font-size: 32px;
+}
+
+.title strong {
+    background-image: linear-gradient(to left, #98bff9, #69a0fd, #3c80fd, #0f5cf7, #1230eb);
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.link-shortener {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f0f8ff;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input p {
+    font-size: 20px;
+    margin: 0 16px 0 0;
+}
+
+.input input {
+    height: 32px;
+    width: 200px;
+    padding-left: 16px;
+    border: none;
+    outline: none;
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+.input input::placeholder {
+    color: #333333;
+    font-size: 16px;
+}
+
+.input button {
+    height: 32px;
+    width: 160px;
+    font-size: 16px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0f5cf7;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    color: #ffffff;
+    background-color: #a00000;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.choose-domain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 16px 0 32px;
+}
+
+.choose-domain p {
+    font-size: 20px;
+    margin: 0 16px 0 0;
+}
+
+.choose-domain input {
+    visibility: none;
+	display: none;
+}
+
+.choose-domain label {
+    margin-left: 8px;
+    height: 28px;
+    width: 100px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    border-radius: 4px;
+    color: #333333;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.choose-domain label:hover {
+    opacity: 0.8;
+}
+
+.choose-domain input[type=radio]:checked + label {
+    background-color: #0f5cf7;
+    color: #ffffff;
+}
+
+.description {
+    max-width: 600px;
+    margin-bottom: 0;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 32px;
+    background-color: #eeeeee;
+    padding: 4px 8px;
+    border-radius: 4px; 
+}
+
+.result p {
+    font-size: 20px;
+    margin: 0 16px 0 0;
+}
+
+.result h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6fba00;
+    text-decoration: underline;
+}
